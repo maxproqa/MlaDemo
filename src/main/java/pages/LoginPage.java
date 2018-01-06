@@ -11,7 +11,6 @@ public class LoginPage extends LeafTapsWrappers{
 	public LoginPage(RemoteWebDriver driver, ExtentTest test){
 		this.driver = driver;
 		this.test =test;
-		//https://sso.mylawally.com/?baseURL=http://judgement.mylawally.com
 		
 		/*if(!verifyTitle("https://sso.mylawally.com/")){
 			reportStep("This is not Login Page", "FAIL");
@@ -48,14 +47,6 @@ public class LoginPage extends LeafTapsWrappers{
 	}
 
 }
-
-
-
-
-
-
-
-
 
 
 
