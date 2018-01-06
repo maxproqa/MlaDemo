@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Leaftaps" parallel="classes" thread-count="2">
+  <test name="Leads">
+    <classes>
+       <class name="testcases.TC001_LoginLogOut"/>
+      <class name="testcases.TC001_Loginnegative"/>
+      <!-- <class name="testcases.TC002_CreateLead"/>
+       -->
+    </classes>
+  </test> <!-- Leads -->
+</suite> <!-- Leaftaps -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Leaftaps]" parallel="classes">
+  <test name="Leads(failed)" parallel="classes">
+    <classes>
+      <class name="testcases.TC001_LoginLogOut">
+        <methods>
+          <include name="loginLogOut" invocation-numbers="0 1"/>
+          <include name="beforeTest"/>
+          <include name="setValue"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC001_LoginLogOut -->
+      <class name="testcases.TC001_Loginnegative">
+        <methods>
+          <include name="loginLogOut"/>
+          <include name="setValue"/>
+        </methods>
+      </class> <!-- testcases.TC001_Loginnegative -->
+    </classes>
+  </test> <!-- Leads(failed) -->
+</suite> <!-- Failed suite [Leaftaps] -->
