@@ -35,8 +35,12 @@ public class HomePage extends LeafTapsWrappers{
 
 
 	public HomePage clickLogOut(){
-		clickByLink("Profile");
+		clickByLink("Logout");
 		return new HomePage(driver, test);		
+	}
+	public ProfilePage clickProfile(){
+		clickByLink("Profile");
+		return new ProfilePage(driver,test);
 	}
 
 	public HomePage clickSignUp(){

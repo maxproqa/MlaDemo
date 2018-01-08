@@ -3,6 +3,7 @@ package testcases;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import pages.HomePage;
 import pages.LoginPage;
 import wrappers.LeafTapsWrappers;
 
@@ -20,6 +21,9 @@ public class TC001_Loginnegative extends LeafTapsWrappers{
 	
 	@Test(dataProvider = "fetchData")
 	public void loginLogOut(String uName, String pwd, String txt){
+		HomePage Hp=new HomePage(driver,test);
+		Hp.CloseOfferwindow();
+		Hp.clickLoginbutton();
 		new LoginPage(driver, test)
 		.enterUserName(uName)
 		.enterPassword(pwd)

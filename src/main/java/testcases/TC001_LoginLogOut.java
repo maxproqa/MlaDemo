@@ -25,14 +25,11 @@ public class TC001_LoginLogOut extends LeafTapsWrappers{
 		HomePage Hp=new HomePage(driver,test);
 		Hp.CloseOfferwindow();
 		Hp.clickLoginbutton();
-
 		new LoginPage(driver, test)
 		.enterUserName(uName)
 		.enterPassword(pwd)
-		.clicksignin();
-
-
-		//.clickLogOut();
+		.clicksignin()
+		.clickLogOut();
 
 	}
 
