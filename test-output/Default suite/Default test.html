@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 08 15:33:16 IST 2018</td>
+<td>Started on:</td><td>Tue Jan 09 20:45:38 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>90 seconds (90463 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (926 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,23 +67,67 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC001_LoginLogOut.loginLogOut()'><b>loginLogOut</b><br>Test class: testcases.TC001_LoginLogOut<br>Parameters: gplus.bioemax@gmail.com, 123456</td>
-<td></td>
-<td>30</td>
-<td>testcases.TC001_LoginLogOut@ef9176</td></tr>
-<tr>
-<td title='testcases.TC001_LoginLogOut.loginLogOut()'><b>loginLogOut</b><br>Test class: testcases.TC001_LoginLogOut<br>Parameters: gplus.bioe.max@gmail.com, 123456</td>
-<td></td>
-<td>29</td>
-<td>testcases.TC001_LoginLogOut@ef9176</td></tr>
+<td title='testcases.TC003_Registration.UserRegistration()'><b>UserRegistration</b><br>Test class: testcases.TC003_Registration</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: UserRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=19, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=20, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=21, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)General,(java.lang.String)Kannan,(java.lang.String)Devaraj,(java.lang.String)Chennai Main Road,(java.lang.String)TamilNadu,(java.lang.String)Chennai,(java.lang.String)Male,(java.lang.String)9.63852741E9,(java.lang.String)kannan.d@gmail.com,(java.lang.String)123456.0]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:52)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1278)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace27306621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27306621'><pre>org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: UserRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=19, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=20, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=21, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)General,(java.lang.String)Kannan,(java.lang.String)Devaraj,(java.lang.String)Chennai Main Road,(java.lang.String)TamilNadu,(java.lang.String)Chennai,(java.lang.String)Male,(java.lang.String)9.63852741E9,(java.lang.String)kannan.d@gmail.com,(java.lang.String)123456.0]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:52)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1278)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TC003_Registration@ef9176</td></tr>
 </table><p>
 </body>
 </html>

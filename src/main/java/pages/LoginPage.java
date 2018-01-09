@@ -45,6 +45,10 @@ public class LoginPage extends LeafTapsWrappers{
 		verifyTextContainsById("loginErrorMsg", text);
 		return this;
 	}
+	public RegistrationPage clickCreateAccount(){
+		
+		return new RegistrationPage(driver,test);
+	}
 
 }
 

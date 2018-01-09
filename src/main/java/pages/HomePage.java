@@ -43,9 +43,9 @@ public class HomePage extends LeafTapsWrappers{
 		return new ProfilePage(driver,test);
 	}
 
-	public HomePage clickSignUp(){
+	public RegistrationPage clickSignUp(){
 		clickByLink("Sign up");
-		return new HomePage(driver,test);
+		return new RegistrationPage(driver,test);
 	}
 
 	public HomePage clickCommunityLink() {

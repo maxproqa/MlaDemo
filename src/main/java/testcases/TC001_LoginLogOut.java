@@ -22,9 +22,9 @@ public class TC001_LoginLogOut extends LeafTapsWrappers{
 	@Test(dataProvider = "fetchData")
 
 	public void loginLogOut(String uName, String pwd){
-		HomePage Hp=new HomePage(driver,test);
-		Hp.CloseOfferwindow();
-		Hp.clickLoginbutton();
+		HomePage mHp=new HomePage(driver,test);
+		mHp.CloseOfferwindow();
+		mHp.clickLoginbutton();
 		new LoginPage(driver, test)
 		.enterUserName(uName)
 		.enterPassword(pwd)
