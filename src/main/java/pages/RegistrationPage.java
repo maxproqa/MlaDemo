@@ -17,7 +17,10 @@ public class RegistrationPage extends LeafTapsWrappers{
 	public RegistrationPage(RemoteWebDriver driver, ExtentTest test){
 		this.driver=driver;
 		this.test=test;
-		if(!verifyTitle("Registraiton")){
+		driver.getCurrentUrl();
+		driver.navigate().to("http://sso.bioezone.in/Home/registration");
+
+		if(!verifyTitle("Registration")){
 			reportStep("This is not Registration Page", "FAIL");
 		}
 	}
@@ -27,15 +30,15 @@ public class RegistrationPage extends LeafTapsWrappers{
 	}
 
 	public RegistrationPage enterFirstName(String data){
-		enterByName("First Name", data);
+		enterByXpath("//input[@ng-model='Fname']", data);
 		return this;
 	}
 	public RegistrationPage enterLastName(String data){
-		enterByName("Last Name", data);
+		enterByXpath("//input[@ng-model='LName']", data);
 		return this;
 	}
 	public RegistrationPage enterContactName(String data){
-		enterByName("Contact Name", data);
+		enterByXpath("//input[@placeholder='Contact Name']", data);
 		return this;
 	}
 	public RegistrationPage enterAddress(String data) {
@@ -47,56 +50,56 @@ public class RegistrationPage extends LeafTapsWrappers{
 		return this;
 	}
 	public RegistrationPage selectState(String data){
-		selectVisibileTextByXPath("//select[@ng-model='StateId1]", data);
+		selectVisibileTextByXPath("//select[@ng-model='StateId1']", data);
 		return this;
 	}
 	public RegistrationPage selectCourt(String data){
-		selectVisibileTextByXPath("//select[@ng-model='CourtId]", data);
+		selectVisibileTextByXPath("//select[@ng-model='CourtId']", data);
 		return this;
 	}
 	public RegistrationPage selectCity(String data){
-		selectVisibileTextByXPath("//select[@ng-model='CityId1]", data);
+		selectVisibileTextByXPath("//select[@ng-model='CityId1']", data);
 		return this;
 	}
 	public RegistrationPage selectGender(String data){
-		selectVisibileTextByXPath("//select[@ng-model='Gender]", data);
+		selectVisibileTextByXPath("//select[@ng-model='Gender']", data);
 		return this;
 	}
 	public RegistrationPage enterPincode(String data){
-		enterByName("//input[@ng-model='pincode]", data);
+		enterByXpath("//input[@ng-model='pincode']", data);
 		return this;
 
 	}
 	public RegistrationPage enterWorkingHours(String data){
-		enterByXpath("//input[@ng-model='WorkingHours]", data);
+		enterByXpath("//input[@ng-model='WorkingHours']", data);
 		return this;
 	}
 	public RegistrationPage enterWebSite(String data){
-		enterByXpath("//input[@ng-model='WebSite]", data);
+		enterByXpath("//input[@ng-model='WebSite']", data);
 		return this;
 	}
 	public RegistrationPage enterCompany(String data){
-		enterByXpath("//input[@ng-model='Company]", data);
+		enterByXpath("//input[@ng-model='Company']", data);
 		return this;
 	}
 	public RegistrationPage enterEnrollmentID(String data){
-		enterByName("barcouncil", data);
+		enterByXpath("//input[@placeholder='Enrollment ID']", data);
 		return this;
 	}
-	
+
 	public RegistrationPage enterInstituteName(String data){
-		enterByName("institute", data);
+		enterByXpath("//input[@placeholder='Institute Name']", data);
 		return this;
 	}
-	
-	
+
+
 	public RegistrationPage enterBarCouncilNo(String data){
-		enterByXpath("//input[@ng-model='BarCouncilNo]", data);
+		enterByXpath("//input[@ng-model='BarCouncilNo']", data);
 		return this;
 	}
-	
+
 	public RegistrationPage enterMobile(String data){
-		enterByXpath("//input[@ng-model='Mobile]", data);
+		enterByXpath("//input[@ng-model='Mobile']", data);
 		return this;
 	}
 	public RegistrationPage enterEmailId(String data){
@@ -113,11 +116,11 @@ public class RegistrationPage extends LeafTapsWrappers{
 		return this;
 	}
 	public RegistrationPage selectAOP(String data){
-		selectVisibileTextByXPath("//select[@ng-model='AOP]", data);
+		selectVisibileTextByXPath("//select[@ng-model='AOP']", data);
 		return this;
 	}
 	public RegistrationPage clickGeneralTermsandConditions(){
-		clickByXpath("//input[@ng-model='chkAccept]");
+		clickByXpath("//input[@ng-model='chkAccept']");
 		return this;
 	}
 	public RegistrationPage clickTermsandConditions(){
@@ -129,11 +132,11 @@ public class RegistrationPage extends LeafTapsWrappers{
 		return new RegistrationPage(driver,test);
 	}
 	public HomePage verifySuccesDetails(String text){
-		verifyTextContainsByXpath("//*[@id='myModal3']/div/div/div[2]/p", text);
+		verifyTextContainsByXpath("//p[@ng-bind='dbMessage']", text);
 		return new HomePage(driver,test);
 	}
 	public HomePage CloseSuccessPopup(){
-		clickByLink("Okay");
+		clickByXpath("//button[@class='close']");
 		return new HomePage(driver,test);
 	}
 

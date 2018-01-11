@@ -71,7 +71,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will launch the browser in local machine and maximise the browser and set the
 	 * wait for 30 seconds and load the url
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 * @param url - The url with http or https
 	 * 
 	 */
@@ -82,7 +82,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will launch the browser in grid node (if remote) and maximise the browser and set the
 	 * wait for 30 seconds and load the url 
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 * @param url - The url with http or https
 	 * 
 	 */
@@ -125,7 +125,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * 
 	 * @param idValue - id of the webelement
 	 * @param data - The data to be sent to the webelement
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 * @throws IOException 
 	 */
 	public void enterById(String idValue, String data) {
@@ -145,7 +145,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * 
 	 * @param nameValue - name of the webelement
 	 * @param data - The data to be sent to the webelement
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 * @throws IOException 
 	 */
 	public void enterByName(String nameValue, String data) {
@@ -167,7 +167,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * 
 	 * @param xpathValue - xpathValue of the webelement
 	 * @param data - The data to be sent to the webelement
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 * @throws IOException 
 
 	 */
@@ -188,7 +188,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will verify the title of the browser 
 	 * @param title - The expected title of the browser
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public boolean verifyTitle(String title){
 		boolean bReturn = false;
@@ -210,7 +210,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * This method will verify the given text matches in the element text
 	 * @param xpath - The locator of the object in xpath
 	 * @param text  - The text to be verified
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void verifyTextByXpath(String xpath, String text){
 		try {
@@ -229,7 +229,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * This method will verify the given text is available in the element text
 	 * @param xpath - The locator of the object in xpath
 	 * @param text  - The text to be verified
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void verifyTextContainsByXpath(String xpath, String text){
 		try{
@@ -248,7 +248,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * This method will verify the given text is available in the element text
 	 * @param id - The locator of the object in id
 	 * @param text  - The text to be verified
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void verifyTextById(String id, String text) {
 		try{
@@ -267,7 +267,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * This method will verify the given text is available in the element text
 	 * @param id - The locator of the object in id
 	 * @param text  - The text to be verified
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void verifyTextContainsById(String id, String text) {
 		try{
@@ -284,7 +284,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	/**
 	 * This method will close all the browsers
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void closeAllBrowsers() {
 		try {
@@ -306,7 +306,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will click the element using id as locator
 	 * @param id  The id (locator) of the element to be clicked
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void clickById(String id) {
 		try{
@@ -321,7 +321,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will click the element using id as locator
 	 * @param id  The id (locator) of the element to be clicked
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void clickByClassName(String classVal) {
 		try{
@@ -335,7 +335,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will click the element using name as locator
 	 * @param name  The name (locator) of the element to be clicked
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void clickByName(String name) {
 		try{
@@ -349,7 +349,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will click the element using link name as locator
 	 * @param name  The link name (locator) of the element to be clicked
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void clickByLink(String name) {
 		try{
@@ -363,7 +363,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will click the element using xpath as locator
 	 * @param xpathVal  The xpath (locator) of the element to be clicked
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void clickByXpath(String xpathVal) {
 		try{
@@ -396,7 +396,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will mouse over on the element using xpath as locator
 	 * @param xpathVal  The xpath (locator) of the element to be moused over
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void mouseOverByXpath(String xpathVal) {
 		try{
@@ -410,7 +410,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will mouse over on the element using link name as locator
 	 * @param xpathVal  The link name (locator) of the element to be moused over
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void mouseOverByLinkText(String linkName) {
 		try{
@@ -424,7 +424,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will return the text of the element using xpath as locator
 	 * @param xpathVal  The xpath (locator) of the element
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public String getTextByXpath(String xpathVal){
 		String bReturn = "";
@@ -439,7 +439,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	/**
 	 * This method will return the text of the element using id as locator
 	 * @param xpathVal  The id (locator) of the element
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public String getTextById(String idVal) {
 		String bReturn = "";
@@ -455,7 +455,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * This method will select the drop down value using id as locator
 	 * @param id The id (locator) of the drop down element
 	 * @param value The value to be selected (visibletext) from the dropdown 
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void selectVisibileTextById(String id, String value) {
 		try{
@@ -487,7 +487,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	/**
 	 * This method will switch to the parent Window
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void switchToParentWindow() {
 		try {
@@ -504,7 +504,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	/**
 	 * This method will move the control to the last window
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void switchToLastWindow() {
 		try {
@@ -520,7 +520,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	/**
 	 * This method will accept the alert opened
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void acceptAlert() {
 		try {
@@ -535,7 +535,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	/**
 	 * This method will return the text of the alert
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public String getAlertText() {		
 		String text = null;
@@ -552,7 +552,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	/**
 	 * This method will dismiss the alert opened
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public void dismissAlert() {
 		try {
@@ -568,7 +568,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	
 	/**
 	 * This method will take snapshot of the browser
-	 * @author Babu - TestLeaf
+	 * @author Ramesh - Maxpro
 	 */
 	public long takeSnap(){
 		long number = (long) Math.floor(Math.random() * 900000000L) + 10000000L; 

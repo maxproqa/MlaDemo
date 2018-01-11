@@ -5,10 +5,13 @@
 	<artifactId>PageObjectModel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server-standalone -->
+		
+			
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.8.0</version>
+			<version>3.8.1</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -19,12 +22,12 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>3.16</version>
+			<version>3.17</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>3.16</version>
+			<version>3.17</version>
 		</dependency>
 		<dependency>
 			<groupId>com.relevantcodes</groupId>

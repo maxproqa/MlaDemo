@@ -11,6 +11,9 @@ public class LoginPage extends LeafTapsWrappers{
 	public LoginPage(RemoteWebDriver driver, ExtentTest test){
 		this.driver = driver;
 		this.test =test;
+		//driver.getCurrentUrl();
+		//driver.navigate().to("http://sso.bioezone.in/");
+		
 		
 		/*if(!verifyTitle("https://sso.mylawally.com/")){
 			reportStep("This is not Login Page", "FAIL");
@@ -18,17 +21,17 @@ public class LoginPage extends LeafTapsWrappers{
 	}
 	
 	public LoginPage enterUserName(String data){
-		enterById("username", data);
+		enterById(prop.getProperty("Login.UserName.Id"), data);
 		return this;
 	}
 	
 	public LoginPage enterPassword(String data){
-		enterById("password", data);
+		enterById(prop.getProperty("Login.Password.Id"), data);
 		return this;
 	}
 	
 	public HomePage clicksignin(){
-		clickById("btGoLogin");
+		clickById(prop.getProperty("Login.LoginButton.Id"));
 		/*HomePage hp = new HomePage();
 		return hp;*/		
 		return new HomePage(driver, test);		
@@ -42,11 +45,12 @@ public class LoginPage extends LeafTapsWrappers{
 	}
 	
 	public LoginPage verifyLoginDetails(String text){
-		verifyTextContainsById("loginErrorMsg", text);
+		verifyTextContainsById(prop.getProperty("Login.Error.Id"), text);
 		return this;
 	}
 	public RegistrationPage clickCreateAccount(){
 		
+		clickByXpath(prop.getProperty("Login.CreateButton.Xpath"));
 		return new RegistrationPage(driver,test);
 	}
 
