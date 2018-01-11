@@ -2,39 +2,99 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="926" started-at="2018-01-09T15:15:38Z" finished-at="2018-01-09T15:15:39Z">
+  <suite name="Default suite" duration-ms="61151" started-at="2018-01-10T10:34:13Z" finished-at="2018-01-10T10:35:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="926" started-at="2018-01-09T15:15:38Z" finished-at="2018-01-09T15:15:39Z">
+    <test name="Default test" duration-ms="61151" started-at="2018-01-10T10:34:13Z" finished-at="2018-01-10T10:35:14Z">
       <class name="testcases.TC003_Registration">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="beforeSuite" is-config="true" duration-ms="643" started-at="2018-01-09T20:45:37Z" finished-at="2018-01-09T20:45:38Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="beforeSuite" is-config="true" duration-ms="838" started-at="2018-01-10T16:04:12Z" finished-at="2018-01-10T16:04:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="beforeTest" is-config="true" duration-ms="2" started-at="2018-01-09T20:45:38Z" finished-at="2018-01-09T20:45:38Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="beforeTest" is-config="true" duration-ms="5" started-at="2018-01-10T16:04:13Z" finished-at="2018-01-10T16:04:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="setValue()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="setValue" is-config="true" duration-ms="0" started-at="2018-01-09T20:45:38Z" finished-at="2018-01-09T20:45:38Z">
+        <test-method status="PASS" signature="setValue()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="setValue" is-config="true" duration-ms="1" started-at="2018-01-10T16:04:13Z" finished-at="2018-01-10T16:04:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValue -->
-        <test-method status="FAIL" signature="UserRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003_Registration@ef9176]" name="UserRegistration" duration-ms="908" started-at="2018-01-09T20:45:38Z" data-provider="fetchData" finished-at="2018-01-09T20:45:39Z">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="beforeMethod" is-config="true" duration-ms="17850" started-at="2018-01-10T16:04:14Z" finished-at="2018-01-10T16:04:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="UserRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003_Registration@ef9176]" name="UserRegistration" duration-ms="42216" started-at="2018-01-10T16:04:32Z" data-provider="fetchData" finished-at="2018-01-10T16:05:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[General]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kannan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Devaraj]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chennai Main Road]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TamilNadu]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9638527410]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[kannan.d@gmail.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[
-Data provider mismatch
-Method: UserRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=19, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=20, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=21, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)General,(java.lang.String)Kannan,(java.lang.String)Devaraj,(java.lang.String)Chennai Main Road,(java.lang.String)TamilNadu,(java.lang.String)Chennai,(java.lang.String)Male,(java.lang.String)9.63852741E9,(java.lang.String)kannan.d@gmail.com,(java.lang.String)123456.0]]]>
+              <![CDATA[FAILED]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: UserRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=19, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=20, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=21, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)General,(java.lang.String)Kannan,(java.lang.String)Devaraj,(java.lang.String)Chennai Main Road,(java.lang.String)TamilNadu,(java.lang.String)Chennai,(java.lang.String)Male,(java.lang.String)9.63852741E9,(java.lang.String)kannan.d@gmail.com,(java.lang.String)123456.0]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:52)
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1278)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
+              <![CDATA[java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:33)
+	at utils.Reporter.reportStep(Reporter.java:43)
+	at pages.RegistrationPage.<init>(RegistrationPage.java:21)
+	at pages.HomePage.clickSignUp(HomePage.java:48)
+	at testcases.TC003_Registration.UserRegistration(TC003_Registration.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
@@ -54,15 +114,19 @@ Arguments: [(java.lang.String)General,(java.lang.String)Kannan,(java.lang.String
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserRegistration -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-01-09T20:45:39Z" finished-at="2018-01-09T20:45:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="afterMethod" is-config="true" duration-ms="124" started-at="2018-01-10T16:05:14Z" finished-at="2018-01-10T16:05:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-01-10T16:05:14Z" finished-at="2018-01-10T16:05:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="afterSuite" is-config="true" duration-ms="462" started-at="2018-01-09T20:45:39Z" finished-at="2018-01-09T20:45:39Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC003_Registration@ef9176]" name="afterSuite" is-config="true" duration-ms="548" started-at="2018-01-10T16:05:14Z" finished-at="2018-01-10T16:05:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

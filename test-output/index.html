@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ramesh\AppData\Local\Temp\testng-eclipse--1195813165\testng-customsuite.xml</span>
+                    <span>C:\Users\ramesh\AppData\Local\Temp\testng-eclipse-2086104681\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.TC003_Registration" hash-for-method="UserRegistration">UserRegistration</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.TC003_Registration" hash-for-method="UserRegistration(General, Kannan, Devaraj, Chennai Main Road, TamilNadu, Chennai, Male, 9638527410, kannan.d@gmail.co...)">UserRegistration(General, Kannan, Devaraj, Chennai Main Road, TamilNadu, Chennai, Male, 9638527410, kannan.d@gmail.co...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,16 +125,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="UserRegistration">
-                  </a> <!-- UserRegistration -->
+                  <a name="UserRegistration(General, Kannan, Devaraj, Chennai Main Road, TamilNadu, Chennai, Male, 9638527410, kannan.d@gmail.co...)">
+                  </a> <!-- UserRegistration(General, Kannan, Devaraj, Chennai Main Road, TamilNadu, Chennai, Male, 9638527410, kannan.d@gmail.co...) -->
                   <span class="method-name">UserRegistration</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: UserRegistration([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=19, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=20, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=21, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)General,(java.lang.String)Kannan,(java.lang.String)Devaraj,(java.lang.String)Chennai Main Road,(java.lang.String)TamilNadu,(java.lang.String)Chennai,(java.lang.String)Male,(java.lang.String)9.63852741E9,(java.lang.String)kannan.d@gmail.com,(java.lang.String)123456.0]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:52)
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1278)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
+                  <span class="parameters">(General, Kannan, Devaraj, Chennai Main Road, TamilNadu, Chennai, Male, 9638527410, kannan.d@gmail.com, 123456)</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:33)
+	at utils.Reporter.reportStep(Reporter.java:43)
+	at pages.RegistrationPage.&lt;init&gt;(RegistrationPage.java:21)
+	at pages.HomePage.clickSignUp(HomePage.java:48)
+	at testcases.TC003_Registration.UserRegistration(TC003_Registration.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
@@ -161,7 +169,7 @@ Arguments: [(java.lang.String)General,(java.lang.String)Kannan,(java.lang.String
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ramesh\AppData\Local\Temp\testng-eclipse--1195813165\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ramesh\AppData\Local\Temp\testng-eclipse-2086104681\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -214,12 +222,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'UserRegistration')
 data.setCell(0, 2, 'testcases.TC003_Registration')
-data.setCell(0, 3, 908);
+data.setCell(0, 3, 42216);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 908 ms</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,19 +260,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">645 ms</span>
+                <span class="method-start">840 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setValue</span>
-                <span class="method-start">652 ms</span>
+                <span class="method-start">849 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1767 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserRegistration(General, Kannan, Devaraj, Chennai Main Road, TamilNadu, Chennai, Male, 9638527410, kannan.d@gmail.co...)</span>
+                <span class="method-start">19617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">61864 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">1569 ms</span>
+                <span class="method-start">61989 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">1589 ms</span>
+                <span class="method-start">62020 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

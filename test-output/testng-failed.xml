@@ -7,10 +7,12 @@
         <methods>
           <include name="setValue"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="UserRegistration"/>
+          <include name="UserRegistration" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- testcases.TC003_Registration -->
     </classes>

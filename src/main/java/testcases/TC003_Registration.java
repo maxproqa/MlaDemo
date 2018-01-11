@@ -3,6 +3,7 @@
  */
 package testcases;
 
+import org.openqa.selenium.support.ui.Sleeper;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,7 @@ import wrappers.LeafTapsWrappers;
  *
  */
 public class TC003_Registration extends LeafTapsWrappers{
-	
+
 	@BeforeClass
 	public void setValue(){
 		testCaseName = "New Registration";
@@ -26,8 +27,8 @@ public class TC003_Registration extends LeafTapsWrappers{
 		dataSheetName = "TC003";
 	}	
 	@Test(dataProvider = "fetchData")
-	
-	public void UserRegistration(String usertype,String fName,String lName,String Address,String state,String city,String gender,String mobile,String emailid,String password,String txt,String cName,String institutename,String enrollmentid,String landmark,String court,String pincode,String Whours,String company, String website,String barcouncilno,String phone){
+
+	public void UserRegistration(String usertype,String fName,String lName,String Address,String state,String city,String gender,String mobile,String emailid,String password/*,String txt,String cName,String institutename,String enrollmentid,String landmark,String court,String pincode,String Whours,String company, String website,String barcouncilno,String phone*/) throws InterruptedException{
 		HomePage mHp=new HomePage(driver,test);
 		mHp.CloseOfferwindow();
 		mHp.clickSignUp();
@@ -48,8 +49,8 @@ public class TC003_Registration extends LeafTapsWrappers{
 			mRp.CloseSuccessPopup();
 			//mRp.verifySuccesDetails(txt);
 
-		}
-		else if(usertype.equalsIgnoreCase("Law Firm")){
+			//}
+			/*	else if(usertype.equalsIgnoreCase("Law Firm")){
 			mRp.enterContactName(cName);
 			mRp.enterAddress(Address);
 			mRp.enterLandmark(landmark);
@@ -124,13 +125,14 @@ public class TC003_Registration extends LeafTapsWrappers{
 			mRp.clickRegisterButton();
 			mRp.verifySuccesDetails(txt);
 			mRp.CloseSuccessPopup();
-		}
-		
-		else{
+		}*/
+
+			/*else{
 			System.out.println("Invalid UserType");
+		}*/
+
+
+
 		}
-
-
-
 	}
 }
