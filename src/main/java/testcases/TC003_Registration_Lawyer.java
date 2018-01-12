@@ -54,7 +54,7 @@ public class TC003_Registration_Lawyer extends LeafTapsWrappers{
 		mRp.clickGeneralTermsandConditions();
 		mRp.clickTermsandConditions();
 		mRp.clickRegisterButton();
-		mRp.verifySuccesDetails(txt);
+		mRp.verifyPopupAlertDetails(txt);
 		mRp.CloseSuccessPopup();
 	}
 

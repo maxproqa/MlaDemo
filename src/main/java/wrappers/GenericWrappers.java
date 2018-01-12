@@ -31,7 +31,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public RemoteWebDriver driver;
 	protected static Properties prop;
 	public String sUrl,primaryWindowHandle,sHubUrl,sHubPort;
-	
+
 	public GenericWrappers() {
 		Properties prop = new Properties();
 		try {
@@ -198,7 +198,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 				bReturn = true;
 			}else
 				System.out.println();
-				reportStep("The title of the page:"+driver.getTitle()+" did not match with the value :"+title, "SUCCESS");
+			reportStep("The title of the page:"+driver.getTitle()+" did not match with the value :"+title, "SUCCESS");
 
 		}catch (Exception e) {
 			reportStep("Unknown exception occured while verifying the title", "FAIL");
@@ -234,6 +234,8 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public void verifyTextContainsByXpath(String xpath, String text){
 		try{
 			String sText = driver.findElementByXPath(xpath).getText();
+			System.out.println("Excel Text contains"+text);
+			System.out.println("Website text contains"+sText);
 			if (sText.contains(text)){
 				reportStep("The text: "+sText+" contains the value :"+text, "PASS");
 			}else{
@@ -294,7 +296,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 		}
 
 	}
-	
+
 	public void closeBrowser() {
 		try {
 			driver.close();
@@ -491,7 +493,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 */
 	public void switchToParentWindow() {
 		try {
-						
+
 			Set<String> winHandles = driver.getWindowHandles();
 			for (String wHandle : winHandles) {
 				driver.switchTo().window(wHandle);
@@ -565,7 +567,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 
 	}
 
-	
+
 	/**
 	 * This method will take snapshot of the browser
 	 * @author Ramesh - Maxpro

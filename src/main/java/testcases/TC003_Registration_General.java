@@ -46,11 +46,12 @@ public class TC003_Registration_General extends LeafTapsWrappers{
 		mRp.enterPassword(password);
 		mRp.clickGeneralTermsandConditions();
 		mRp.clickRegisterButton();
-		//Thread.sleep(2000);
-		mRp.verifySuccesDetails(txt);
+		Thread.sleep(50000);
+		mRp.verifyPopupAlertDetails(txt);
+		Thread.sleep(50000);
 		//Thread.sleep(2000);
 		mRp.CloseSuccessPopup();
-		Thread.sleep(2000);
+		Thread.sleep(50000);
 
 
 	}

@@ -25,123 +25,123 @@ public class RegistrationPage extends LeafTapsWrappers{
 		}
 	}
 	public RegistrationPage selectUserType(String value) {
-		selectVisibileTextByXPath("//*[@id='formReg']/div[1]/select", value);
+		selectVisibileTextByXPath(prop.getProperty("Registration.UserType.Xpath"), value);
 		return this;
 	}
 
 	public RegistrationPage enterFirstName(String data){
-		enterByXpath("//input[@ng-model='Fname']", data);
+		enterByXpath(prop.getProperty("Registration.FirstName.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterLastName(String data){
-		enterByXpath("//input[@ng-model='LName']", data);
+		enterByXpath(prop.getProperty("Registration.LastName.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterContactName(String data){
-		enterByXpath("//input[@placeholder='Contact Name']", data);
+		enterByXpath(prop.getProperty("Registration.ContactName.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterAddress(String data) {
-		enterByXpath("//input[@ng-model='Address1']", data);
+		enterByXpath(prop.getProperty("Registration.Address.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterLandmark(String data) {
-		enterByXpath("//input[@ng-model='LandMark']", data);
+		enterByXpath(prop.getProperty("Registration.Landmark.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage selectState(String data){
-		selectVisibileTextByXPath("//select[@ng-model='StateId1']", data);
+		selectVisibileTextByXPath(prop.getProperty("Registraiton.State.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage selectCourt(String data){
-		selectVisibileTextByXPath("//select[@ng-model='CourtId']", data);
+		selectVisibileTextByXPath(prop.getProperty("Registration.Court.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage selectCity(String data){
-		selectVisibileTextByXPath("//select[@ng-model='CityId1']", data);
+		selectVisibileTextByXPath(prop.getProperty("Registration.City.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage selectGender(String data){
-		selectVisibileTextByXPath("//select[@ng-model='Gender']", data);
+		selectVisibileTextByXPath(prop.getProperty("Registration.Gender.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterPincode(String data){
-		enterByXpath("//input[@ng-model='pincode']", data);
+		enterByXpath(prop.getProperty("Registration.Pincode.Xpath"), data);
 		return this;
 
 	}
 	public RegistrationPage enterWorkingHours(String data){
-		enterByXpath("//input[@ng-model='WorkingHours']", data);
+		enterByXpath(prop.getProperty("Registration.WorkingHours.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterWebSite(String data){
-		enterByXpath("//input[@ng-model='WebSite']", data);
+		enterByXpath(prop.getProperty("Registration.WebSite.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterCompany(String data){
-		enterByXpath("//input[@ng-model='Company']", data);
+		enterByXpath(prop.getProperty("Registration.Company.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterEnrollmentID(String data){
-		enterByXpath("//input[@placeholder='Enrollment ID']", data);
+		enterByXpath(prop.getProperty("Registration.EnrollmentID.Xpath"), data);
 		return this;
 	}
 
 	public RegistrationPage enterInstituteName(String data){
-		enterByXpath("//input[@placeholder='Institute Name']", data);
+		enterByXpath(prop.getProperty("Registration.InstituteName.Xpath"), data);
 		return this;
 	}
 
 
 	public RegistrationPage enterBarCouncilNo(String data){
-		enterByXpath("//input[@ng-model='BarCouncilNo']", data);
+		enterByXpath(prop.getProperty("Registration.BarCouncilNo.Xpath"), data);
 		return this;
 	}
 
 	public RegistrationPage enterMobile(String data){
-		enterByXpath("//input[@ng-model='Mobile']", data);
+		enterByXpath(prop.getProperty("Registration.Mobile.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterEmailId(String data){
-		enterByXpath("//input[@ng-model='EmailId']", data);
+		enterByXpath(prop.getProperty("Registration.EmailId.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage enterPassword(String data){
-		enterByName("password", data);
+		enterByName(prop.getProperty("Registration.Password.Name"), data);
 		return this;
 	}
 
 	public RegistrationPage enterphoneno(String data){
-		enterByXpath("//input[@ng-model='Phone1']", data);
+		enterByXpath(prop.getProperty("Registration.phoneno.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage selectAOP(String data){
-		selectVisibileTextByXPath("//select[@ng-model='AOP']", data);
+		selectVisibileTextByXPath(prop.getProperty("Registration.AOP.Xpath"), data);
 		return this;
 	}
 	public RegistrationPage clickGeneralTermsandConditions(){
-		clickByXpath("//input[@ng-model='chkAccept']");
+		clickByXpath(prop.getProperty("Registration.GeneralTermsandConditions.Xpath"));
 		return this;
 	}
 	public RegistrationPage clickTermsandConditions(){
-		clickById("chkLFAccept1");
+		clickById(prop.getProperty("Registration.TermsandConditions.Id"));
 		return this;
 	}
 	public RegistrationPage clickRegisterButton(){
-		clickById("btGoLogin");
+		clickById(prop.getProperty("Registration.RegisterButton.Id"));
 		return new RegistrationPage(driver,test);
 	}
-	public HomePage verifySuccesDetails(String text){
-		verifyTextContainsByXpath("//p[@ng-bind='dbMessage']", text);
+	public HomePage verifyPopupAlertDetails(String text){
+		verifyTextContainsByXpath(prop.getProperty("Registration.PopupAlertDetails.Xpath"), text);
 		return new HomePage(driver,test);
 	}
 	public HomePage CloseSuccessPopup(){
-		clickByXpath("//button[@class='close']");
+		clickByXpath(prop.getProperty("Registration.SuccessPopup.Xpath"));
 		return new HomePage(driver,test);
 	}
 
 	public LoginPage clickSigninbutton(){
-		clickByLink("Sign In");
+		clickByLink(prop.getProperty("Registration.Signinbutton.Link"));
 		return new LoginPage(driver,test);
 	}
 }

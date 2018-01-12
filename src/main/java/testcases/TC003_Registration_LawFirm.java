@@ -50,7 +50,7 @@ public class TC003_Registration_LawFirm extends LeafTapsWrappers{
 		mRp.enterPassword(password);
 		mRp.clickGeneralTermsandConditions();
 		mRp.clickRegisterButton();
-		mRp.verifySuccesDetails(txt);
+		mRp.verifyPopupAlertDetails(txt);
 		mRp.CloseSuccessPopup();
 	}
 }

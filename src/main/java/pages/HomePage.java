@@ -20,14 +20,14 @@ public class HomePage extends LeafTapsWrappers{
 
 	public HomePage CloseOfferwindow(){
 				
-		clickByXpath("//img[@src='/Content/Images/offer-close-icon.jpg']");
+		clickByXpath(prop.getProperty("Home.OfferWindow.Xpath"));
 		/*HomePage hp = new HomePage();
 		return hp;*/		
 		return new HomePage(driver, test);	
 	}
 
 	public LoginPage clickLoginbutton(){
-		clickByLink("Login");		
+		clickByLink(prop.getProperty("Home.LoginButton.Link"));		
 		/*HomePage hp = new HomePage();
 		return hp;*/		
 		return new LoginPage(driver, test);	
@@ -35,23 +35,22 @@ public class HomePage extends LeafTapsWrappers{
 
 
 	public HomePage clickLogOut(){
-		clickByLink("Logout");
+		clickByLink(prop.getProperty("Home.LogoutButton.Link"));
 		return new HomePage(driver, test);		
 	}
 	public ProfilePage clickProfile(){
-		clickByLink("Profile");
+		clickByLink(prop.getProperty("Home.Profile.Link"));
 		return new ProfilePage(driver,test);
 	}
 
 	public RegistrationPage clickSignUp(){
-		clickByLink("Sign up");
+		clickByLink(prop.getProperty("Home.SignUpButton.Link"));
 		return new RegistrationPage(driver,test);
 	}
 
 	public HomePage clickCommunityLink() {
 		clickByLink("Community");
 		return new HomePage(driver,test);
-
 	}
 
 	public HomePage clickCentralActsLink() {
