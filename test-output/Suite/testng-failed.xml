@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
     <classes>
       <class name="testcases.TC001_Loginnegative">
         <methods>
-          <include name="loginLogOut"/>
+          <include name="afterMethod"/>
+          <include name="loginLogOut" invocation-numbers="2"/>
+          <include name="beforeMethod"/>
+          <include name="setValue"/>
         </methods>
       </class> <!-- testcases.TC001_Loginnegative -->
       <class name="testcases.TC001_LoginLogOut">
         <methods>
-          <include name="loginLogOut" invocation-numbers="0 1"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
           <include name="setValue"/>
           <include name="beforeSuite"/>
+          <include name="afterTest"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testcases.TC001_LoginLogOut -->

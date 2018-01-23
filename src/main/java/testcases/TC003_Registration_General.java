@@ -3,7 +3,12 @@
  */
 package testcases;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Sleeper;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -46,12 +51,10 @@ public class TC003_Registration_General extends LeafTapsWrappers{
 		mRp.enterPassword(password);
 		mRp.clickGeneralTermsandConditions();
 		mRp.clickRegisterButton();
-		Thread.sleep(50000);
 		mRp.verifyPopupAlertDetails(txt);
-		Thread.sleep(50000);
-		//Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		mRp.CloseSuccessPopup();
-		Thread.sleep(50000);
+		Thread.sleep(500);
 
 
 	}

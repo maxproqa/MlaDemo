@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.TC003_Registration_General">
+      <class name="testcases.TC004_ForgotPassword">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
+          <include name="setValue"/>
           <include name="beforeSuite"/>
-          <include name="generalUserRegistration" invocation-numbers="0"/>
           <include name="afterTest"/>
           <include name="beforeMethod"/>
-          <include name="setValue"/>
+          <include name="ForgotPassword" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- testcases.TC003_Registration_General -->
+      </class> <!-- testcases.TC004_ForgotPassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

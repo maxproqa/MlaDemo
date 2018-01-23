@@ -3,7 +3,10 @@
  */
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -17,7 +20,7 @@ public class RegistrationPage extends LeafTapsWrappers{
 	public RegistrationPage(RemoteWebDriver driver, ExtentTest test){
 		this.driver=driver;
 		this.test=test;
-		driver.getCurrentUrl();
+ 		driver.getCurrentUrl();
 		driver.navigate().to("http://sso.bioezone.in/Home/registration");
 
 		if(!verifyTitle("Registration")){
@@ -127,13 +130,16 @@ public class RegistrationPage extends LeafTapsWrappers{
 		clickById(prop.getProperty("Registration.TermsandConditions.Id"));
 		return this;
 	}
+	
 	public RegistrationPage clickRegisterButton(){
 		clickById(prop.getProperty("Registration.RegisterButton.Id"));
 		return new RegistrationPage(driver,test);
 	}
-	public HomePage verifyPopupAlertDetails(String text){
+
+	public RegistrationPage verifyPopupAlertDetails(String text){
+		
 		verifyTextContainsByXpath(prop.getProperty("Registration.PopupAlertDetails.Xpath"), text);
-		return new HomePage(driver,test);
+		return new RegistrationPage(driver,test);
 	}
 	public HomePage CloseSuccessPopup(){
 		clickByXpath(prop.getProperty("Registration.SuccessPopup.Xpath"));

@@ -20,7 +20,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.Reporter;
 
@@ -233,6 +235,10 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 */
 	public void verifyTextContainsByXpath(String xpath, String text){
 		try{
+			
+			WebDriverWait wait = new WebDriverWait(driver,90);
+			wait.until(ExpectedConditions.textToBePresentInElement(driver.findElementByXPath(xpath), text));
+					
 			String sText = driver.findElementByXPath(xpath).getText();
 			System.out.println("Excel Text contains"+text);
 			System.out.println("Website text contains"+sText);

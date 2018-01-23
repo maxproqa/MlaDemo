@@ -53,6 +53,13 @@ public class LoginPage extends LeafTapsWrappers{
 		clickByXpath(prop.getProperty("Login.CreateButton.Xpath"));
 		return new RegistrationPage(driver,test);
 	}
+	public LoginPage clickForgotPassword(){
+		clickByXpath(prop.getProperty("Login.ForgotPassword.Xpath"));
+		return new LoginPage(driver,test);
+	}
+	
+	
+	
 
 }
 
